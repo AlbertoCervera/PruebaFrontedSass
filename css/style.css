@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.background {
+  max-width: 100%;
+  height: 100vh;
+  background: #0d0628;
+  position: relative;
+  overflow: hidden;
+}
+
+.background .decorator1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 290px;
+  margin: auto;
+  z-index: 1;
+}
+
+.background .decorator2 {
+  position: fixed;
+  right: -40px;
+  bottom: 70px;
+  max-height: 200px;
+}
+
+.background .circle1 {
+  position: fixed;
+  bottom: -100px;
+  left: -100px;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+  width: 500px;
+  height: 300px;
+  border-radius: 100%;
+  background: #191964;
+}
+
+.background .circle2 {
+  z-index: 1;
+  position: fixed;
+  right: -100px;
+  top: -100px;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+  width: 700px;
+  height: 300px;
+  border-radius: 100%;
+  background: #412461;
+}
+
+.background .nav {
+  width: 100%;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  z-index: 4;
+}
+
+.background .nav .logo h1 {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.background .nav .logo h1::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  left: 65px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  background: #da3dbf;
+}
+
+.background .nav .logo h1::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  left: 75px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  background: #da3dbf;
+}
+
+.background .nav .items {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.background .nav .items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background .nav .items ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.background .nav .items ul li button {
+  background: blue;
+  border-radius: 40px;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bolder;
+  letter-spacing: 1.2px;
+}
+
+.background main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background main .info {
+  margin-left: 80px;
+  width: 300px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.background main .info .header {
+  display: block;
+  margin-left: -225px;
+  height: 100px;
+}
+
+.background main .info .header pre {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #ef43cf;
+}
+
+.background main .info .content p {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  color: white;
+}
+
+.background main .info .more_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.background main .info .more_info button {
+  width: 40px;
+  border-radius: 40px;
+  border: none;
+  background: #3848f1;
+  position: relative;
+}
+
+.background main .info .more_info button:hover {
+  cursor: pointer;
+}
+
+.background main .info .more_info button::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  content: "";
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.background main .info .more_info h3 {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.background main .cards {
+  width: 70%;
+  height: 400px;
+  z-index: 40;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background main .cards .card {
+  width: 300px;
+  height: 450px;
+  z-index: 40px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border: 1px solid #4a3f68;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.background main .cards .card:nth-last-child(1n) {
+  border-radius: 0px 20px 20px 0px;
+}
+
+.background main .cards .card:nth-last-child(2n) {
+  height: 500px;
+  border-radius: 20px;
+}
+
+.background main .cards .card:nth-last-child(2n) button {
+  margin-top: 60px;
+  background-color: #ef43cf;
+}
+
+.background main .cards .card:nth-last-child(3n) {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.background main .cards .card h1 {
+  font-size: 70px;
+}
+
+.background main .cards .card h4 {
+  opacity: 0.7;
+  font-size: 11px;
+}
+
+.background main .cards .card p {
+  font-size: 19px;
+}
+
+.background main .cards .card button {
+  padding: 8px 20px;
+  border-radius: 40px;
+  border: none;
+  margin-top: 30px;
+  background-color: #3848f1;
+  font-weight: 700;
+  color: white;
+}
+
+.background main .cards .card button:hover {
+  cursor: pointer;
+}
+
+.background main .cards .card .line {
+  min-width: 200px;
+  min-height: 2px;
+  background-color: #66538b;
+}
+/*# sourceMappingURL=style.css.map */
